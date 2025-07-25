@@ -1,0 +1,31 @@
+{
+  "name": "todo-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "bin":{
+    "todo": "./dist/index.js"
+  },
+ "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+      "todo",
+    "cli",
+    "typescript",
+    "command-line",
+    "task-tracker"
+  ],
+  "author": "Dipak Khare",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
