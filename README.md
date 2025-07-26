@@ -9,6 +9,7 @@ Track your daily tasks directly from the terminal.
 - List all tasks
 - Mark tasks as completed
 - Remove tasks
+- Edit taks
 - Data is stored locally in a `todo.json` file
 
 ## 🚀 Installation (Local Development)
