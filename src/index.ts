@@ -5,6 +5,7 @@ import { addCommand } from "./commands/add";
 import {listCommand} from "./commands/list"
 import { doneCommand } from "./commands/done";
 import { removeCommand } from "./commands/remove";
+import { editCommand } from "./commands/edit";
 
 
 // cli program setup
@@ -43,5 +44,14 @@ program
   .command('remove <index>')
   .description('Remove a task')
   .action(removeCommand);
+program
+  .command('edit <index> <newTask>')
+  .description('edit a task by its index')
+  .action((index,newTask)=>{
+    const idx = parseInt(index)-1;
+    editCommand(idx,newTask)
+
+
+  });
 
 program.parse();
