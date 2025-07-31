@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-  "bin":{
+  "bin": {
     "todo": "./dist/index.js"
   },
- "scripts": {
+  "scripts": {
     "start": "ts-node src/index.ts",
     "build": "tsc",
-    "clean": "rm -rf dist",
-    "prepublishOnly": "npm run build"
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "keywords": [
-      "todo",
+    "todo",
     "cli",
     "typescript",
     "command-line",
@@ -24,7 +26,13 @@
   "type": "commonjs",
   "dependencies": {
     "chalk": "^5.4.1",
-    "commander": "^14.0.0",
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.5",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }

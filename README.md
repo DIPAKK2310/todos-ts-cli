@@ -26,3 +26,6 @@ npm run build
 
 # Link globally (test it as a CLI)
 npm link
+
+
+Folder Structure
