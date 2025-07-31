@@ -2,3 +2,5 @@ node_modules/
 dist/
 todo.json
 .env
+# Jest coverage
+coverage/
